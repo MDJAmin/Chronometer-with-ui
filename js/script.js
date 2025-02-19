@@ -1,4 +1,3 @@
-// Start Model 1
 (() => {
   let hours = `00`,
     minutes = `00`,
@@ -46,65 +45,3 @@
     (hours = `00`), (minutes = `00`), (seconds = `00`);
   };
 })();
-// End Model 1
-
-// Start Model 2
-
-// "use strict";
-
-// document.getElementById("start").addEventListener("click", startChronometer);
-// document.getElementById("stop").addEventListener("click", stopChronometer);
-// document.getElementById("reset").addEventListener("click", resetChronometer);
-
-// let timer;
-// let isRunning = false;
-// let seconds = 0;
-// let minutes = 0;
-// let hours = 0;
-
-// function startChronometer() {
-//   if (!isRunning) {
-//     isRunning = true;
-//     timer = setInterval(updateTime, 1000);
-//     document.getElementById("start").disabled = true;
-//     document.getElementById("stop").disabled = false;
-//   }
-// }
-
-// function stopChronometer() {
-//   if (isRunning) {
-//     isRunning = false;
-//     clearInterval(timer);
-//     document.getElementById("start").disabled = false;
-//     document.getElementById("stop").disabled = true;
-//   }
-// }
-
-// function resetChronometer() {
-//   stopChronometer();
-//   seconds = 0;
-//   minutes = 0;
-//   hours = 0;
-//   updateDisplay();
-// }
-
-// function updateTime() {
-//   seconds++;
-//   if (seconds === 60) {
-//     seconds = 0;
-//     minutes++;
-//     if (minutes === 60) {
-//       minutes = 0;
-//       hours++;
-//     }
-//   }
-//   updateDisplay();
-// }
-// function updateDisplay() {
-//   const timeString = `${hours}:${(minutes < 10 ? "0" : "") + minutes}:${
-//     (seconds < 10 ? "0" : "") + seconds
-//   }`;
-//   document.getElementById("display").textContent = timeString;
-// }
-
-// End Model 2
